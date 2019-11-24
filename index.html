@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMonitor</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        body {
+    background: black url(http://backgroundlabs.com/wp-content/uploads/2013/02/paw-print-seamless-pattern-280x210.png);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 120px;
+}
+
+.logo {
+   
+    position: relative;
+    left: 220px;
+    top: 20px;
+
+}
+
+.texto1 {
+    max-width: 50px;
+    position: relative;
+    left: 75px;
+    bottom: 95px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+.links1 {
+    position: relative;
+    top: 40px;
+    left: 30%;
+    font-size: 30px;
+
+}
+
+a {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: pink;
+}
+
+.texto2 {
+    position: relative;
+    left: 100px;
+    width: 50%;
+
+}
+
+.dog1 {
+    width: 400px;
+    position: relative;
+    left: 670px;
+    bottom: 180px;
+
+}
+
+.alinha {
+    height: 350px;
+    background: crimson;
+    bottom: 80px;
+    border: 1px solid red;
+    position: relative;
+    top: 70px;
+    
+
+}
+
+h2 {
+    position: relative;
+    left: 350px;
+}
+
+h4 {
+    text-align: center;
+}
+
+.doglogo {
+    width: 50px;
+    position: relative;
+    left: 95px;
+
+
+}
+
+.homilogo {
+
+    width: 50px;
+    position: relative;
+    left: 95px;
+
+}
+
+button {
+    top: 10px;
+    position: relative;
+    left: 190px;
+    border-radius: 20%;
+}
+
+
+.movendo {
+    position: relative;
+    left: 200px;
+}
+
+.movendo2 {
+    position: relative;
+    left: 200px;
+}
+
+#principal {
+    background-color: white;
+    padding: 20px;
+}
+
+.cadastro1 {
+    position: relative;
+    top: 40px;
+    left: 100px;
+    
+}
+
+.cadastro2 {
+    position: relative;
+    bottom: 330px;
+    left: 700px;
+}
+
+.localizepet1 {
+    position: relative;
+    left: 100px;
+    bottom: 400px;
+   
+}
+
+.mapa1 {
+    position: relative;
+    width: 550px;
+    left: 400px;
+    top: 300px;
+}
+
+.tabela1 {
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    
+}
+    </style>
+
+</head>
+
+<body>
+
+
+    <div id="principal">
+
+
+        <!--Head Site Inicio-->
+        <!--Logo Inicio-->
+        <div class="logo">
+            <img class="movendo" width="300px" src="PetMonitor2.png">
+        </div>
+        <!--Logo Fim-->
+
+
+        <span class="links1">
+            <a href="">Home</a> |
+            <a href="">Quem Somos</a> |
+            <a href="">Cadastre-se</a>
+        </span>
+        <!--Head Site Fim-->
+
+        <!--inicio corpo -->
+
+        <div class="alinha">
+
+            <h2>Quem Somos</h2>
+
+            <p class="texto2">
+                Mussum Ipsum, cacilds vidis litro abertis. Interagi no mé, cursus quis, vehicula ac nisi. Atirei o pau
+                no gatis, per gatis num morreus. Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu
+                levo! Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
+
+                Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Copo furadis é
+                disculpa de bebadis, arcu quam euismod magna. Pra lá , depois divoltis porris, paradis. Diuretics
+                paradis num copo é motivis de denguis.
+            </p>
+            <img class="dog1" src="https://cdn.pixabay.com/photo/2019/02/06/15/18/puppy-3979350_960_720.jpg">
+        </div><br>
+        <!--fim corpo -->
+
+        <!--inicio da tabela-->
+
+        <div class="cadastro1">
+            <h1>Cadastro</h1>
+            <h3>Dados do Dono</h3>
+
+            <img width="55px" src="cadastro1.jpeg" alt="">
+
+            <form action="achaPet.html" method="POST" name="formulario">
+
+                Nome: <br>
+                <input type="text" id="nome" placeholder="Digite seu nome" required> <br> <br>
+                Idade: <br>
+                <input type="number" name="numero" id="numero" placeholder="Digite sua idade" required> <br> <br>
+                Sexo: <br>
+                Masculino
+                <input type="radio" name='sexo' id="M"> |
+                Feminino
+                <input type="radio" name='sexo' id="F">
+                <br><br>
+                E-mail: <br>
+                <input type="email" id="email" placeholder="meuemail@teste.com" required> <br> <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+        <div class="cadastro2">
+            <h3>Dados do Pet</h3>
+
+            <img width="55px" src="cadastro2.jpeg" alt="">
+
+            <form action="" name="formulario">
+                Name do pet: <br>
+                <input type="text" id="nome" placeholder="Digite o nome Pet" required> <br> <br>
+                Raça: <br>
+                <input type="text" placeholder="Raça do pet" required> <br> <br>
+                Sexo: <br>
+                Macho
+                <input type="radio" name='sexo' id="M">
+                Fêmea
+                <input type="radio" name='sexo' id="F"> <br> <br>
+                <input type="submit" value="Enviar">
+
+            </form>
+
+        </div>
+
+        <div class="localizepet1">
+            
+            <div class="mapa1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d84868.9492393973!2d-44.01986534855946!3d-19.93649151641847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699dc336346fb%3A0x6cd7a529d18b722b!2sPra%C3%A7a%20da%20Liberdade!5e0!3m2!1spt-BR!2sbr!4v1572144435934!5m2!1spt-BR!2sbr" width="550" height="450"></iframe>
+            </div>
+
+            <h1>Localize seu Pet</h1>
+
+            Latitute do dono:
+            <input type="number" name="" id=""> <br><br>
+            Longitude do dono:
+            <input type="number" name="" id=""> <br><br>
+            Latitute do Pet:
+            <input type="number" name="" id=""> <br><br>
+            Longitude do Pet:
+            <input type="number" name="" id=""> <br><br>
+            <input type="button" value="Enviar">
+
+        </div>
+
+        <div class="tabela1">
+            <h2>Pets já cadastados</h2>
+            <table border="1px solid">
+                <tr>
+                    <td>Nome</td>
+                    <td>Roberto</td>
+                    <td>Juliana</td>
+                    <td>Marlene</td>
+                    <td>Diego</td>
+                    <td>Luciano</td>
+                    <td>Gabriel</td>
+                    <td>Milena</td>
+                    <td>Larissa</td>
+                </tr>
+                <tr>
+                    <td>Pet</td>
+                    <td>Cachorro</td>
+                    <td>Cachorro</td>
+                    <td>Gato</td>
+                    <td>Cachorro</td>
+                    <td>Gato</td>
+                    <td>Cachorro</td>
+                    <td>Gato</td>
+                    <td>Cachorro</td>
+                </tr>
+                <tr>
+                    <td>Sexo</td>
+                    <td>Macho</td>
+                    <td>Macho</td>
+                    <td>Fêmea</td>
+                    <td>Macho</td>
+                    <td>Fêmea</td>
+                    <td>Macho</td>
+                    <td>Macho</td>
+                    <td>Fêmea</td>
+                </tr>
+                <tr>
+                    <td>Latitude</td>
+                    <td>-19.433236</td>
+                    <td>-19.894543</td>
+                    <td>-19.145855</td>
+                    <td>-19.871945</td>
+                    <td>-19.021434</td>
+                    <td>-19.974254</td>
+                    <td>-19.318956</td>
+                    <td>-19.751321</td>
+
+                </tr>
+                <tr>
+                    <td>Longitude</td>
+                    <td>-44.647856</td>
+                    <td>-44.249367</td>
+                    <td>-44.241756</td>
+                    <td>-44.021435</td>
+                    <td>-44.456824</td>
+                    <td>-44.349765</td>
+                    <td>-44.647905</td>
+                    <td>-19.315821</td>
+
+                </tr>
+
+
+
+            </table>
+        </div>
+
+        <h4>Todos os direito reservados</h4>
+<script >
+var LatX = parseInt( prompt('Dono digite sua latitude'))
+var LongX = parseInt( prompt('Dono digite sua logitude'))
+
+
+var LatY = parseInt( prompt('Digite a latitude do PET') )
+var LongY = parseInt( prompt('Digite a logitude do PET'))
+
+var d = Math.sqrt((LatY - LongY ^ 2) + (LatX - LongX ^ 2))
+
+document.write(d)
+
+
+function localizacao(){
+    if ( d >= 20) {
+
+        alert('Cuidado seu Pet fugiu')
+        document.write(d)
+        
+    } else {
+        alert('Pode ficar tranquilo seu Pet está bem ')
+        document.write(d)
+        
+    }
+  
+}
+</script>
+</body>
+
+</html>
